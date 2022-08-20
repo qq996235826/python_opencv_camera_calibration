@@ -94,7 +94,7 @@ def get_photo(photos_num):
     # 写入xyz数据到xyz.txt
     np.savetxt(XYZ_PATH, pose[:, 0:3], delimiter=',')
 
-    # 写入RXRYRZ数据到RXRYRZ.txt
+    # 写入rxryrz数据到rxryrz.txt
     np.savetxt(RXRYRZ_PATH, pose[:, 3:6], delimiter=',')
 
     # 释放摄像头
@@ -104,6 +104,6 @@ def get_photo(photos_num):
 
 
 if __name__ == '__main__':
-    photos_num = input("请输入拍摄照片数:\n")
-    get_photo(int(photos_num))
+    # photos_num = input("请输入拍摄照片数:\n")
+    # get_photo(int(photos_num))
     camera_calibration.camera_calibration()
