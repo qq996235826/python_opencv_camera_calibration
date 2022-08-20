@@ -104,6 +104,6 @@ def get_photo(photos_num):
 
 
 if __name__ == '__main__':
-    # photos_num = input("请输入拍摄照片数:\n")
-    # get_photo(int(photos_num))
+    photos_num = input("请输入拍摄照片数:\n")
+    get_photo(int(photos_num))
     camera_calibration.camera_calibration()
